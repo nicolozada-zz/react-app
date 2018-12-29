@@ -6,8 +6,11 @@
   "dependencies": {
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
+    "gatsby-plugin-less": "^2.0.8",
     "gatsby-plugin-react-helmet": "^2.0.10",
-    "react-helmet": "^5.2.0"
+    "less": "^3.9.0",
+    "react-helmet": "^5.2.0",
+    "url-loader": "^1.1.2"
   },
   "keywords": [
     "gatsby"
