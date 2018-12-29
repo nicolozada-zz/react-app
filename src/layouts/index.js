@@ -15,17 +15,8 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <div>
-    <div className="Hero">
-        <div className="HeroGroup">
-        <button class="btnBack">Volver a la cartera</button>
-        <div>
-            <img src="../images/logo-pacifico-white.png"/>
-            <h1 class="bar-title">Asesoría ViP: Tomás Durrieu</h1>
-        </div>
-        <button class= "btnStop">Detener asesoría ViP</button>
-        </div>
+      <Header />
     </div>
-</div>
     
   </div>
 )

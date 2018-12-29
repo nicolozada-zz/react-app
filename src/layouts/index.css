@@ -39,32 +39,6 @@ body{
 
 a{
   color:var(--color-pf-blue);
+  display:inline-grid;
 }
 
-.Hero{
-  background-color:var(--color-pf-blue) 
-}
-
-.HeroGroup{
-  display:grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-column-gap: var(--space);
-  align-items: center;
-
-}
-
-
-.HeroGroup h1{
-  color:white;
-  font-size: var(--font-0);
-  display:inline-block;
-}
-
-
-.HeroGroup button{
-  @apply --buttonSecondary-white--icon_mini;
-}
-
-.HeroGroup button.btnBack{
-  justify-self:start;
-}

@@ -1,0 +1,65 @@
+
+
+
+/* Root */
+:root{
+    --space: 0.25rem;
+    --color-pf-blue: #0099cc;
+    --font-3:calc(var(--font-2)*1.25);
+    --font-2:calc(var(--font-1)*1.25);
+    --font-1:calc(var(--font-0)*1.25);
+    --font-0: 1rem;
+    --font--1: calc(var(--font-0)/1.25);
+  
+    /* Mixins */
+    --buttonSecondary-white--icon_mini: {
+      font-size: var(--font--1);
+      color: white;
+      padding: var(--space);
+    }
+}
+
+.Header{
+    position: fixed;
+    width: 100%;
+    padding: calc(var(--space)) 0;
+    z-index: 100;
+    background-color:var(--color-pf-blue) 
+  }
+  
+  .HeaderGroup{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-column-gap: var(--space);
+    align-items: center;
+  
+  }
+  
+  
+  .HeaderGroup h1{
+    color:white;
+    font-size: var(--font-0);
+    display:inline-block;
+  }
+  
+  .HeaderGroup .HeaderTitle{
+    justify-self: center;
+  }
+  
+  .HeaderGroup .HeaderTitle img{
+    position:relative;
+    top: var(--space);
+    padding-right:calc(var(--space)*4);
+  }
+  
+  .HeaderGroup button{
+    @apply --buttonSecondary-white--icon_mini;
+  }
+  
+  .HeaderGroup button.btnBack{
+    justify-self:start;
+  }
+  
+  .HeaderGroup button.btnStop{
+    justify-self: end;
+  }
